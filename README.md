@@ -1,0 +1,2 @@
+# thehealthwholesalermultitableDB1
+Project was developed using ASP.NET MVC 5 with Web API 2 controllers and SQL Server for the database (Database first). jQuery with Ajax used to call the API, to retrieve a company and products (orders page) before constructing them in a list, and also enabling the deletion of products and companies from UI and Database. Create and edit controllers built for model binding.
