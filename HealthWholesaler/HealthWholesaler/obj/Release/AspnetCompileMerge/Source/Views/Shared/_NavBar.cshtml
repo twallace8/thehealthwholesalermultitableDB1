@@ -1,0 +1,24 @@
+﻿
+   
+        
+    @*@Html.ActionLink("Health Wholesaler", "Index", "Home", new { area = "" }, new {@class = "navbar-brand, text - center"})*@
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <h1 id="sitename" class="text-md-center">Health Wholesaler</h1> <br/>
+
+    <div class="container">
+        <table id ="ggf" class="table table-bordered table-hover">
+            <tr>
+                @*<td class="text-center">@Html.ActionLink("Home", "Index", "Home")&nbsp</td>*@
+                <td class="text-center">@Html.ActionLink("Company", "Index", "Company")&nbsp</td>
+              @*  <td class="text-center">@Html.ActionLink("Product", "Index", "Product")&nbsp</td>*@
+                <td class="text-center">@Html.ActionLink("Products", "Index", "Offers")&nbsp</td>
+                <td class="text-center">@Html.ActionLink("Orders", "New", "Orders")&nbsp</td>
+            </tr>
+        </table>
+            
+    </div>
+</nav>
+
+

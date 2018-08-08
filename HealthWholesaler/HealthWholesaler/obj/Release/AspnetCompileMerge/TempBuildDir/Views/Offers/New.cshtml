@@ -1,0 +1,64 @@
+﻿@model HealthWholesaler.ViewModel.OffersCategory
+
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Edit Product</h2><br />
+<br/>
+<br />
+@using (Html.BeginForm("Create", "Offers"))
+{
+    
+    @*<div>
+        <img src="@Url.Content(Model.Offer.Picture)" alt="Product" height="250" , width="150" class="large-picture-border">
+    </div>*@
+    <hr />
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.Offer.Name)
+        @Html.TextBoxFor(o => o.Offer.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(o => o.Offer.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.Offer.Sale_Price)
+        @Html.TextBoxFor(o => o.Offer.Sale_Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(o => o.Offer.Sale_Price)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.Offer.NumberInStock)
+        @Html.TextBoxFor(o => o.Offer.NumberInStock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(o => o.Offer.NumberInStock)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(o => o.Offer.CategoryId)
+        @Html.DropDownListFor(o => o.Offer.CategoryId, new SelectList(Model.Category, "ID", "Name"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(o => o.Offer.CategoryId)
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Image URL</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Offer.Picture, new
+       {
+           htmlAttributes = new
+           {
+               @class = "form-control col-md-6",
+               placeholder = "https://5.imimg.com/data5/GV/DP/MY-3831378/500ml-plastic-water-bottle-500x500.jpg"
+           }
+       })
+            @Html.ValidationMessageFor(model => model.Offer.Picture, null, new { @class = "text-danger col-md-6" })
+        </div>
+    </div>
+
+
+    @Html.HiddenFor(o => o.Offer.ID)
+    @Html.AntiForgeryToken()
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+
+}
+

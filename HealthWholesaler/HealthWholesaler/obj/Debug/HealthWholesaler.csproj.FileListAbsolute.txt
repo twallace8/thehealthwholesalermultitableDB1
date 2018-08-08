@@ -1,0 +1,270 @@
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\ApplicationInsights.config
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\csc.exe
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\vbc.exe
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\VBCSCompiler.exe
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\HealthWholesaler.dll.config
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\HealthWholesaler.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\HealthWholesaler.pdb
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Antlr3.Runtime.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\EntityFramework.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\EntityFramework.SqlServer.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.DependencyCollector.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.Web.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.WindowsServer.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.ApplicationInsights.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Google.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Newtonsoft.Json.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Owin.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Helpers.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Mvc.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Optimization.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Razor.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.WebPages.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.WebPages.Razor.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\WebGrease.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.DependencyCollector.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.Web.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AI.WindowsServer.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.ApplicationInsights.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Helpers.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Mvc.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Optimization.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Razor.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.WebPages.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.WebPages.Razor.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Antlr3.Runtime.pdb
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Newtonsoft.Json.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\EntityFramework.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\EntityFramework.SqlServer.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Google.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\obj\Debug\HealthWholesaler.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\obj\Debug\HealthWholesaler.pdb
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Net.Http.Formatting.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Http.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Http.WebHost.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Net.Http.Formatting.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Http.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\System.Web.Http.WebHost.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\AutoMapper.dll
+C:\Projects\HealthWholesaler\HealthWholesaler\bin\AutoMapper.xml
+C:\Projects\HealthWholesaler\HealthWholesaler\obj\Debug\HealthWholesaler.csprojResolveAssemblyReference.cache
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\ApplicationInsights.config
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\csc.exe
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\vbc.exe
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\VBCSCompiler.exe
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\HealthWholesaler.dll.config
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\HealthWholesaler.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\HealthWholesaler.pdb
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Antlr3.Runtime.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\AutoMapper.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\EntityFramework.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\EntityFramework.SqlServer.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.DependencyCollector.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.Web.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.WindowsServer.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.ApplicationInsights.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Google.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Newtonsoft.Json.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Owin.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Net.Http.Formatting.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Helpers.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Http.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Http.WebHost.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Mvc.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Optimization.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Razor.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Razor.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\WebGrease.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\AutoMapper.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.DependencyCollector.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.Web.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AI.WindowsServer.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.ApplicationInsights.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Net.Http.Formatting.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Http.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Http.WebHost.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Helpers.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Mvc.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Optimization.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.Razor.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Razor.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Antlr3.Runtime.pdb
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Newtonsoft.Json.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\EntityFramework.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\EntityFramework.SqlServer.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Google.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\obj\Debug\HealthWholesaler.csprojResolveAssemblyReference.cache
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\obj\Debug\HealthWholesaler.dll
+C:\Projects\HealthWholesaler - Copy from 22.1.2018\HealthWholesaler\obj\Debug\HealthWholesaler.pdb
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\ApplicationInsights.config
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\csc.exe
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\vbc.exe
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\VBCSCompiler.exe
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\HealthWholesaler.dll.config
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\HealthWholesaler.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\HealthWholesaler.pdb
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Antlr3.Runtime.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\AutoMapper.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\EntityFramework.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\EntityFramework.SqlServer.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.DependencyCollector.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.Web.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.WindowsServer.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.ApplicationInsights.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Google.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Newtonsoft.Json.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Owin.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Net.Http.Formatting.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Helpers.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Http.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Http.WebHost.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Mvc.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Optimization.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Razor.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Razor.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\WebGrease.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\AutoMapper.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.DependencyCollector.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.Web.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AI.WindowsServer.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.ApplicationInsights.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Net.Http.Formatting.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Http.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Http.WebHost.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Helpers.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Mvc.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Optimization.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.Razor.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\System.Web.WebPages.Razor.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Antlr3.Runtime.pdb
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Newtonsoft.Json.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\EntityFramework.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\EntityFramework.SqlServer.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Google.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\obj\Debug\HealthWholesaler.csprojResolveAssemblyReference.cache
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\obj\Debug\HealthWholesaler.dll
+C:\Projects\HealthWholesaler - 22.1.2018\HealthWholesaler\obj\Debug\HealthWholesaler.pdb

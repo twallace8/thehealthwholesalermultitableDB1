@@ -1,0 +1,153 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "New Order Form";
+}
+
+<h2>New Order Form</h2>
+<br/>
+<p>
+   <h2>Instructions:</h2>
+    1) Type in one company name from the list. <br/> 
+    2) Type in the name of the offer from list. <br />
+    3) Press tab to display the offer in a list below. <br />
+    4) Repeat steps 2 and 3 until all your products are displayed in a list below. <br />
+    5) Click Submit to process your order. <br /><br /> <br />   
+</p>
+
+<form id="neworder">
+
+    <div class="form-group">
+        <label>Company</label>
+        <input id="company" data-rule-validCustomer="true" required type = "text" value = "" class = "form-control"/>
+    </div>
+
+    <br/>
+
+    <div class="form-group">
+        <label>Offers</label>
+        <input id="offers" data-rule-validProduct="true" required type = "text" value = "" class = "form-control" />
+    </div>
+    <br/>
+
+    @*@*Placeholder for appending list items*@ 
+    <div class="row">
+        <div class="col-md-4 col-sm-4">
+            <ul id="offerslist" class="list-group"></ul>
+        </div>
+    </div>
+
+    <br/>
+    <br />
+    <br />
+    <br />
+
+    <button class="new btn btn-primary">Submit</button>
+
+</form>
+
+
+@section scripts{
+    
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        $(document).ready(function () {
+
+            var vm = {};
+
+            var company = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                remote: {
+                    url: '/api/companies?query=%QUERY',
+                    wildcard: '%QUERY'
+                }
+            });
+
+         @*Company text box typeahead*@
+        $('#company').typeahead({
+            minlength: 3,
+            highlight: true
+        },
+        {
+            name: 'company',
+            display: 'name',
+            source: company
+
+
+        }).on("typeahead:select", function (e, company) {
+            vm.CompanyId = company.id;
+        }); 
+
+
+        @*Auto-completion for Offers*@
+
+
+        var offer = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            remote: {
+            url: '/api/offers?query=%QUERY',
+            wildcard: '%QUERY'
+        }
+        });
+
+        @*Offers text box typeahead*@
+    $('#offers').typeahead({
+            minlength: 3,
+            highlight: true
+        },
+    {
+            name: 'offer',
+            display: 'name',
+            source: offer
+        }).on("typeahead:select", function (e, offer) {
+        
+            $("#offerslist").append("<li class='list-group-item'>" + offer.name + "</li>");
+
+            $("offer").typeahead("val", "");
+
+            vm.OfferIds.push("offer.id");
+
+        });
+
+            // submitting form process
+
+
+
+            // uses jQuery validation to ensure user enters a valid company 
+    $.validator.addMethod("validCustomer", function () {
+        return vm.CompanyId && vm.CompanyId !== 0; 
+    }, "Please insert a valid company");
+
+
+    //$("#neworder").validate({
+    //    submitHandler: function () {
+    //    }
+    //});
+
+        $("#neworder").submit(function (e) {
+
+                // prevents form from submiting normally i.e HTML form 
+        e.preventDefault();
+        $.ajax({
+            url: "/api/NewOrder",
+            method: "post",
+            data: vm
+        }) // handle success and fail scenario's
+        .done(function () {
+            toastr.error("Products ordered");
+        })
+        .fail(function () {
+            toastr.success("Products ordered");
+        })
+
+        })
+
+        });
+
+
+    </script>
+    
+    }

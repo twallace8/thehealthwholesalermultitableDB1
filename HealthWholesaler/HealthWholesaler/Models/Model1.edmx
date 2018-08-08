@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HealthWholesalerDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Headquarters" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DeliveryPackageId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DeliveryPackage">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="AnnualPrice" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Offers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Picture" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Sale_Price" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NumberInStock" Type="int" Nullable="false" />
+          <Property Name="NumberAvailable" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date_Ordered" Type="datetime2" Precision="7" />
+          <Property Name="Date_Returned" Type="datetime2" Precision="7" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="OffersId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Picture" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Price" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NumberInStock" Type="int" Nullable="false" />
+          <Property Name="NumberAvailable" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Company_DeliveryPackage">
+          <End Role="DeliveryPackage" Type="Self.DeliveryPackage" Multiplicity="1" />
+          <End Role="Company" Type="Self.Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliveryPackage">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Company">
+              <PropertyRef Name="DeliveryPackageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Offers_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Offers" Type="Self.Offers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Offers">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Company1">
+          <End Role="Company" Type="Self.Company" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Offers">
+          <End Role="Offers" Type="Self.Offers" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Offers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="OffersId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HealthWholesalerDBModelStoreContainer">
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeliveryPackage" EntityType="Self.DeliveryPackage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Offers" EntityType="Self.Offers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Company_DeliveryPackage" Association="Self.FK_Company_DeliveryPackage">
+            <End Role="DeliveryPackage" EntitySet="DeliveryPackage" />
+            <End Role="Company" EntitySet="Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Offers_Category" Association="Self.FK_Offers_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Offers" EntitySet="Offers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Company1" Association="Self.FK_Order_Company1">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Offers" Association="Self.FK_Order_Offers">
+            <End Role="Offers" EntitySet="Offers" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Product" Association="Self.FK_Order_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HealthWholesalerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Offers" Relationship="Self.FK_Offers_Category" FromRole="Category" ToRole="Offers" />
+          <NavigationProperty Name="Products" Relationship="Self.FK_Product_Category" FromRole="Category" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Headquarters" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DeliveryPackageId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DeliveryPackage" Relationship="Self.FK_Company_DeliveryPackage" FromRole="Company" ToRole="DeliveryPackage" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Company1" FromRole="Company" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="DeliveryPackage">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AnnualPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Companies" Relationship="Self.FK_Company_DeliveryPackage" FromRole="DeliveryPackage" ToRole="Company" />
+        </EntityType>
+        <EntityType Name="Offer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sale_Price" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NumberInStock" Type="Int32" Nullable="false" />
+          <Property Name="NumberAvailable" Type="Int32" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_Offers_Category" FromRole="Offers" ToRole="Category" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Offers" FromRole="Offers" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date_Ordered" Type="DateTime" Precision="7" />
+          <Property Name="Date_Returned" Type="DateTime" Precision="7" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="OffersId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Company" Relationship="Self.FK_Order_Company1" FromRole="Order" ToRole="Company" />
+          <NavigationProperty Name="Offer" Relationship="Self.FK_Order_Offers" FromRole="Order" ToRole="Offers" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Order_Product" FromRole="Order" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NumberInStock" Type="Int32" Nullable="false" />
+          <Property Name="NumberAvailable" Type="Int32" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_Product_Category" FromRole="Product" ToRole="Category" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Product" FromRole="Product" ToRole="Order" />
+        </EntityType>
+        <Association Name="FK_Offers_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Offers" Type="Self.Offer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Offers">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Company_DeliveryPackage">
+          <End Role="DeliveryPackage" Type="Self.DeliveryPackage" Multiplicity="1" />
+          <End Role="Company" Type="Self.Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliveryPackage">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Company">
+              <PropertyRef Name="DeliveryPackageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Company1">
+          <End Role="Company" Type="Self.Company" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Offers">
+          <End Role="Offers" Type="Self.Offer" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Offers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="OffersId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HealthWholesalerDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Companies" EntityType="Self.Company" />
+          <EntitySet Name="DeliveryPackages" EntityType="Self.DeliveryPackage" />
+          <EntitySet Name="Offers" EntityType="Self.Offer" />
+          <EntitySet Name="Orders" EntityType="Self.Order" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <AssociationSet Name="FK_Offers_Category" Association="Self.FK_Offers_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Offers" EntitySet="Offers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Company_DeliveryPackage" Association="Self.FK_Company_DeliveryPackage">
+            <End Role="DeliveryPackage" EntitySet="DeliveryPackages" />
+            <End Role="Company" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Company1" Association="Self.FK_Order_Company1">
+            <End Role="Company" EntitySet="Companies" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Offers" Association="Self.FK_Order_Offers">
+            <End Role="Offers" EntitySet="Offers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Product" Association="Self.FK_Order_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HealthWholesalerDBModelStoreContainer" CdmEntityContainer="HealthWholesalerDBEntities">
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="HealthWholesalerDBModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="HealthWholesalerDBModel.Company">
+              <MappingFragment StoreEntitySet="Company">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Headquarters" ColumnName="Headquarters" />
+                <ScalarProperty Name="DeliveryPackageId" ColumnName="DeliveryPackageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeliveryPackages">
+            <EntityTypeMapping TypeName="HealthWholesalerDBModel.DeliveryPackage">
+              <MappingFragment StoreEntitySet="DeliveryPackage">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="AnnualPrice" ColumnName="AnnualPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Offers">
+            <EntityTypeMapping TypeName="HealthWholesalerDBModel.Offer">
+              <MappingFragment StoreEntitySet="Offers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sale_Price" ColumnName="Sale_Price" />
+                <ScalarProperty Name="NumberInStock" ColumnName="NumberInStock" />
+                <ScalarProperty Name="NumberAvailable" ColumnName="NumberAvailable" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="HealthWholesalerDBModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date_Ordered" ColumnName="Date_Ordered" />
+                <ScalarProperty Name="Date_Returned" ColumnName="Date_Returned" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="OffersId" ColumnName="OffersId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="HealthWholesalerDBModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="NumberInStock" ColumnName="NumberInStock" />
+                <ScalarProperty Name="NumberAvailable" ColumnName="NumberAvailable" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HealthWholesalerDBModelStoreContainer" CdmEntityContainer="HealthWholesalerDBEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="HealthWholesalerDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="HealthWholesalerDBModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Headquarters" ColumnName="Headquarters" />
+          <ScalarProperty Name="DeliveryPackageId" ColumnName="DeliveryPackageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryPackages">
+      <EntityTypeMapping TypeName="HealthWholesalerDBModel.DeliveryPackage">
+        <MappingFragment StoreEntitySet="DeliveryPackage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AnnualPrice" ColumnName="AnnualPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offers">
+      <EntityTypeMapping TypeName="HealthWholesalerDBModel.Offer">
+        <MappingFragment StoreEntitySet="Offers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Sale_Price" ColumnName="Sale_Price" />
+          <ScalarProperty Name="NumberInStock" ColumnName="NumberInStock" />
+          <ScalarProperty Name="NumberAvailable" ColumnName="NumberAvailable" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="HealthWholesalerDBModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date_Ordered" ColumnName="Date_Ordered" />
+          <ScalarProperty Name="Date_Returned" ColumnName="Date_Returned" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="OffersId" ColumnName="OffersId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="HealthWholesalerDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="NumberInStock" ColumnName="NumberInStock" />
+          <ScalarProperty Name="NumberAvailable" ColumnName="NumberAvailable" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

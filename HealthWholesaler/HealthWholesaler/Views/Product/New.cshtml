@@ -1,0 +1,47 @@
+﻿@model HealthWholesaler.ViewModel.ProductCategory
+
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>@Model.Title</h2>
+<br/>
+
+@using(Html.BeginForm("Create", "Product"))
+{
+    <div>
+        <img src="@Url.Content(Model.Products.Picture)" alt="Product" height="250" , width="150" class="large-picture-border">
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Products.Name)
+        @Html.TextBoxFor(p => p.Products.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.Products.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Products.Price)
+        @Html.TextBoxFor(p => p.Products.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.Products.Price)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Products.NumberInStock)
+        @Html.TextBoxFor(p => p.Products.NumberInStock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.Products.NumberInStock)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.Products.CategoryId)
+        @Html.DropDownListFor(p => p.Products.CategoryId, new SelectList(Model.Categories, "ID", "Name"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.Products.CategoryId)
+    </div>
+
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(p => p.Products.ID)
+
+    <br/>
+    <button type="submit" class="btn btn-primary">Save</button>
+
+}
+

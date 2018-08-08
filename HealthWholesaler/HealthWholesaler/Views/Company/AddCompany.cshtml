@@ -1,0 +1,39 @@
+﻿@model HealthWholesaler.ViewModel.CompanyDeliveryPackageVM
+
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>@Model.Title</h2>
+<br />
+<br />
+@using (Html.BeginForm("AddCompany", "Company"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Company.Name)
+        @Html.TextBoxFor(m => m.Company.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Company.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Company.DeliveryPackageId)
+        @*@Html.DropDownListFor(m => m.Company.DeliveryPackageId, new SelectList(Model.DeliveryPackage, "ID", "Name"), "", new { id = Model.Company.DeliveryPackageId, @class = "form-control" })*@
+        @Html.DropDownListFor(m => m.Company.DeliveryPackageId, new SelectList(Model.DeliveryPackage, "ID", "Name"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Company.DeliveryPackageId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Company.Headquarters)
+        @Html.TextBoxFor(m => m.Company.Headquarters, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Company.Headquarters)
+    </div>
+
+    @*@Html.HiddenFor(m => m.Company.ID)*@
+    @Html.AntiForgeryToken()
+    <br />
+
+    <button type="submit" class="btn btn-primary">Save</button>
+
+}
+
+

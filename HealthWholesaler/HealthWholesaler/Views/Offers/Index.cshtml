@@ -1,0 +1,74 @@
+﻿@model IEnumerable<HealthWholesaler.Models.Offer>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Products</h2>
+<br/>
+<p>@Html.ActionLink("New Offer", "AddOffer", "Offers", null, new { @class = "btn btn-primary new" })</p>
+<br/>
+
+
+    @using (Html.BeginForm())
+    {
+        <p>
+            Name: @Html.TextBox("searching") <br/><br />
+            <button class="btn btn-primary js-delete" type="submit">Search</button>
+         </p>
+    }
+
+
+<table id="offers" class="table table-bordered table-hover">
+<thead>
+    <tr>
+    <th class="text-center">Image</th>
+    <th class="text-center">Name</th>
+    <th class="text-center">Category</th>
+    <th class="text-center">Sale Price (£)</th>
+    <th class="text-center">Delete</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach(var i in Model)
+    {
+        <tr>
+            <td class="text-center"><img src="@Url.Content(i.Picture)" height="150" width="100" class="small-picture-border" /></td>
+            <td class="text-center">@Html.ActionLink(@i.Name, "Edit", "Offers", new { id = i.ID }, null)</td>
+            <td class="text-center">@i.Category.Name</td>
+            <td class="text-center">@i.Sale_Price</td>
+            <td class="text-center"><button data-offers-id="@i.ID" class="btn btn-primary js-delete">Delete</button></td>
+        </tr>
+    }
+
+</tbody>
+</table>
+
+
+
+@section scripts{
+
+    <script>
+        $(document).ready(function () {
+
+            // Using JQuery On method and click event prompt user if they want to delete offer
+            $("#offers").on("click", ".js-delete", function () {
+                var button = $(this);
+
+                if (confirm("Are you sure you want to delete this offer?"))
+                {
+                    // Making ajax call to companies api to remove chosen offer from list of UI and from row in DB
+                    $.ajax({
+                        url: "/api/offers/" + button.attr("data-offers-id"),
+                        method: "DELETE",
+                        success: function () {
+                            button.parents("tr").remove(); 
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+}
+
